@@ -17,6 +17,8 @@ The reason this program is Windows-only is that I implemented it using Windows f
 Current status and potential improvements:
 --------------------------------------------
 
+New issue: two friends tried to use the program on their computers and it didn't work. Will try to find out more when I get the chance.
+
 The program does everything I intended it to do, however there's much that can be done to make it more efficient and user-friendly.
 
 The major weakness of this program is the fact that it isn't based on interrupts, so it's constantly running and using one of the CPU cores. I don't know enough about Windows yet to be able to rewrite it to activate only when a mouse button is clicked, so until then it's very resource heavy.
