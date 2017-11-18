@@ -8,7 +8,7 @@
 //#include <bitset> // debugging
 
 using namespace std;
-
+// the following headers use std namespace
 #include "clicks.h"
 #include "menu.h"
 
