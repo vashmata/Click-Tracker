@@ -1,16 +1,28 @@
 # depslib dependency file v1.0
-1511032269 source:d:\0coding\github\click-tracker\clicks.cpp
+1511042826 source:d:\0coding\github\click-tracker\clicks.cpp
+	<windows.h>
+	<ctime>
+	<vector>
 
-1511032338 source:d:\0coding\github\click-tracker\main.cpp
+1511042431 source:d:\0coding\github\click-tracker\main.cpp
 	<windows.h>
 	<ctime>
 	<iostream>
 	<limits.h>
 	<vector>
 	<fstream>
-	<clicks.h>
+	<string>
+	"clicks.h"
+	"menu.h"
 
 1511034409 d:\0coding\github\click-tracker\\clicks.h
 
-1511032268 source:d:\0coding\github\click-tracker\menu.cpp
+1511042896 source:d:\0coding\github\click-tracker\menu.cpp
+	<windows.h>
+	<ctime>
+	<iostream>
+
+1511042375 d:\0coding\github\click-tracker\clicks.h
+
+1511042149 d:\0coding\github\click-tracker\menu.h
 

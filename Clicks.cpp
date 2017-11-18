@@ -1,22 +1,20 @@
 #include <windows.h>
 #include <ctime>
-#include <iostream>
-#include <limits.h>
 #include <vector>
-#include <fstream>
+//#include <string>
 
 using namespace std;
 
-#define LEFT "L"
-#define RIGHT "R"
-#define BMASK (SHORT)1 << (sizeof(SHORT)*CHAR_BIT) - 1
+extern char *LEFT;
+extern char *RIGHT;
+extern SHORT BMASK;
 
 // Clicking loop
-SHORT Lstate; // was the button pressed?
-SHORT Rstate;
-BOOL Lcheck = FALSE; // these flip to TRUE when button is pressed
-BOOL Rcheck = FALSE; // and flip to FALSE when button is released
-vector <char *> clicks; // sequence of <button> <time> <button> ...
+extern SHORT Lstate; // was the button pressed?
+extern SHORT Rstate;
+extern BOOL Lcheck; // these flip to TRUE when button is pressed
+extern BOOL Rcheck; // and flip to FALSE when button is released
+extern vector <char *> clicks; // sequence of <button> <time> <button> ...
 
 void writeClick(char *button) { // save data to array
     clicks.push_back(button);

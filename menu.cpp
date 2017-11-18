@@ -1,3 +1,16 @@
+#include <windows.h>
+#include <ctime>
+#include <iostream>
+
+using namespace std;
+
+// Program initialization
+extern BOOL restart; // will loop program until false
+extern char *timeUnit; // string containing the units
+extern INT conversion; // assigned based on timeUnit
+extern SHORT maxTime; // quantity of timeUnit
+extern SHORT entryLimit; // max chars you can enter as an answer
+
 void setUnits() { // sets units for the timer
     cout <<endl<<"What time scale would you like to use? Type '1' for seconds, "
         "'2' for minutes, \n'3' for hours, '4' for days."<< endl;

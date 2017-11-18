@@ -4,20 +4,13 @@
 #include <limits.h>
 #include <vector>
 #include <fstream>
+//#include <string> // not used in main
 //#include <bitset> // debugging
-//#include <stdlib.h> // not using this anymore
-
-#include <clicks.h>
-#include <menu.h>
 
 using namespace std;
 
-// Program initialization
-BOOL restart = TRUE; // will loop program until false
-char *timeUnit; // string containing the units
-SHORT conversion; // assigned based on timeUnit
-SHORT maxTime; // quantity of timeUnit
-SHORT entryLimit = 15; // max chars you can enter as an answer
+#include "clicks.h"
+#include "menu.h"
 
 int main() {
     // rewrite with C++ strings
@@ -60,7 +53,7 @@ int main() {
         //writing to file
         fstream fs;
         fs.open(fname,fstream::out);
-        for (int i=0;i<clicks.size();i+=3) {
+        for (unsigned int i=0;i<clicks.size();i+=3) {
             fs <<clicks[i]<<','<<clicks[i+1]<<','<<clicks[i+2]<< endl;
         }
         fs.close();
