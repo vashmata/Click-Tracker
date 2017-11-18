@@ -9,9 +9,9 @@ The program opens a basic console window, asking you how long you'd like it to r
 
 Once the time limit is over, the program asks the uses for a filename and creates a csv file with the mouse click data inside. It then asks the user if they want to start over again. The program has some checks to make sure the user doesn't enter incorrect values, but the checks aren't exhaustive.
 
-Since the program functions as a loop, I need to have special checking functions that make sure that once the program registers a mouse click, it stops saving values until the button is released and then depressed a second time.
-
 The reason this program is Windows-only is that I implemented it using Windows functions that return the state of the mouse.
+
+Since the program functions as a loop, I need to have special checking functions that make sure that once the program registers a mouse click, it stops saving values until the button is released and then depressed a second time.
 
 --------------------------------------------
 Current status and potential improvements:
