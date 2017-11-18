@@ -19,6 +19,8 @@ Current status and potential improvements:
 
 New issue: two friends tried to use the program on their computers and it didn't work. Will try to find out more when I get the chance.
 
+Issue resolved. It's an issue with MinGW. Method 1: find libgcc_s_dw2-1.dll and libstdc++-6.dll and drop them in the same folder as the .exe file. Method 2: add "-static-libgcc -static-libstdc++" or just "-static" to the linker compiler flags before compiling.
+
 The program does everything I intended it to do, however there's much that can be done to make it more efficient and user-friendly.
 
 The major weakness of this program is the fact that it isn't based on interrupts, so it's constantly running and using one of the CPU cores. I don't know enough about Windows yet to be able to rewrite it to activate only when a mouse button is clicked, so until then it's very resource heavy.
